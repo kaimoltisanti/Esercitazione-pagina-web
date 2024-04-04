@@ -1,0 +1,136 @@
+body {
+    width: 100%;
+    background-color: #f5f5f5;
+    margin: 0;
+    font-family: "Schibsted Grotesk", sans-serif;
+    color: #111;
+    font-weight: 500;
+
+
+}
+
+h1, h2 {
+    font-family: "Literata", serif;
+    font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+header p, footer nav ul a {
+    text-decoration: none;
+    color: #666;
+}
+
+header p:hover, footer nav ul a:hover {
+    text-decoration: underline;
+    color: #660033;
+
+}
+
+b {
+    color: #660033;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    background-color: hwb(0 85% 15% / 0.5);
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content:space-between;
+    padding: 30px 10%;
+
+}
+
+header nav {
+    display: flex;   
+}
+
+header p {
+    font-weight: 700;
+    text-transform:uppercase; 
+}
+
+header nav a:hover {
+    transform:scale(1.1);
+}
+
+.info {
+    padding: 0px 0px 144px 0px;
+    max-width: 828px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-content: center;
+
+}
+
+.info img {
+    max-height: 100%;
+    top: -120px;
+    right: 0px;
+    position: absolute;
+    z-index: -1;
+}
+
+.info h1 {
+    padding: 144px 0px;
+    color: #660033;
+    font-size: 58px;
+    line-height: 90%;
+    max-width: 500px;
+
+}
+
+.container {
+    padding: 0px 0px 144px 0;
+    max-width: 828px;
+    margin: auto;
+}
+.container .text h2 {
+    color: #660033;
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 1.4rem;
+}
+
+.container .text p {
+    max-width: 720px;
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 1.3rem;
+}
+
+.container .image img {
+    max-height: 360px;
+    width: 828px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: hwb(0 85% 15% / 0.5);
+    padding: 24px;
+    
+}
+
+footer nav ul {
+    max-width: 828px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+footer ul li {
+    text-decoration: none;
+    list-style: none;
+}
+    
+  
