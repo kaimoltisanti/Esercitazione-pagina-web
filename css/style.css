@@ -1,5 +1,4 @@
 body {
-    width: 100%;
     background-color: #f5f5f5;
     margin: 0;
     font-family: "Schibsted Grotesk", sans-serif;
@@ -7,6 +6,13 @@ body {
     font-weight: 500;
 
 
+}
+
+main {
+    max-width: 828px;
+    font-display: flex;
+    margin: auto;
+    padding: 0 10%;
 }
 
 h1, h2 {
@@ -35,6 +41,7 @@ b {
 }
 
 img {
+    display: block;
     max-width: 100%;
 }
 
@@ -63,9 +70,6 @@ header nav a:hover {
 
 .info {
     padding: 0px 0px 144px 0px;
-    max-width: 828px;
-    margin: auto;
-    display: flex;
     justify-content: space-between;
     position: relative;
     align-content: center;
@@ -91,8 +95,7 @@ header nav a:hover {
 
 .container {
     padding: 0px 0px 144px 0;
-    max-width: 828px;
-    margin: auto;
+
 }
 .container .text h2 {
     color: #660033;
@@ -117,7 +120,7 @@ header nav a:hover {
 
 footer {
     background-color: hwb(0 85% 15% / 0.5);
-    padding: 24px;
+    padding: 24px 10%;
     
 }
 
@@ -132,5 +135,35 @@ footer ul li {
     text-decoration: none;
     list-style: none;
 }
+
+@media (max-width: 795px) {
+
+    main {
+        padding: 10%;
+        width: auto;
+    }
+
+    .info {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+
+    .info img {
+        position: static;
+        justify-self: end;
+        max-width: 80%;
+    }
+
+    .info h1 {
+        padding: 0;
+        color: #660033;
+        font-size: 48px;
+        line-height: 90%;
+        max-width: 450px;
+    }
+}
+
+
     
   
